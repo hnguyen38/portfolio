@@ -1,0 +1,16 @@
+light blue 
+    background-color: rgb(231, 241, 253);
+
+light grey
+     background-color: rgb(228, 233, 240);
+
+blue - important things font color
+   color: rgb(24, 162, 253);
+
+black/gray - font
+    color: rgb(100, 100, 100);
+    color: rgb(61, 61, 61);
+
+
+----fonts----
+font-family: 'Poppins', sans-serif;

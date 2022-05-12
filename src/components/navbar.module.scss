@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  color: rgb(100, 100, 100);
+  font-weight: bold;
+  position: fixed;
+
+  .container {
+    display: flex;
+    width: 50vw;
+
+    span {
+      margin-left: 7rem;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .hide {
+      color: rgba(0, 0, 0, 0);
+      margin-left: -3rem;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .container {
+      display: inline;
+      color: rgb(100, 100, 100);
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    width: 40vw;
+
+    span {
+      margin-left: 5rem;
+    }
+  }
+}
