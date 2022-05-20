@@ -1,0 +1,121 @@
+.container {
+  border-top: 1px solid rgb(221, 226, 233);
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .header {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .color {
+      color: rgb(24, 162, 253);
+      font-size: larger;
+      font-weight: bold;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .group1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 37rem;
+      padding: 1rem 0;
+
+      input {
+        height: 2.3rem;
+        font-size: 15px;
+        padding: 0.5rem 0.8rem;
+        font-family: "Poppins", sans-serif;
+        border: 1px solid rgb(231, 231, 231);
+        border-radius: 5px;
+        margin-top: 0.3rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+      span {
+        color: red;
+      }
+    }
+
+    .group {
+      display: flex;
+      flex-direction: column;
+      width: 37rem;
+      padding: 1rem 0;
+
+      input {
+        display: flex;
+        align-items: center;
+        height: 2.3rem;
+        font-size: 15px;
+        padding: 0.5rem 0.8rem;
+        font-family: "Poppins", sans-serif;
+        border: 1px solid rgb(231, 231, 231);
+        border-radius: 5px;
+        margin-top: 0.3rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      textarea {
+        display: flex;
+        align-items: center;
+        height: 7rem;
+        padding: 0.5rem;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        border: 1px solid rgb(231, 231, 231);
+        border-radius: 5px;
+        margin-top: 0.3rem;
+        padding: 0.5rem 0.8rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      span {
+        color: red;
+      }
+    }
+    .button {
+      .send {
+        width: 5rem;
+        height: 2rem;
+        background-color: rgb(24, 162, 253);
+        color: white;
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(0, 152, 253);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    .form {
+      display: flex;
+      justify-content: center;
+
+      .group {
+        width: 90%;
+      }
+    }
+  }
+}
