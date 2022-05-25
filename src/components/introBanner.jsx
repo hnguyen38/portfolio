@@ -1,7 +1,7 @@
 import styles from "./introBanner.module.scss";
 import photo from "../images/photo.jpg";
-import git from "../images/git.png";
-import linked from "../images/linked.png";
+import git from "../images/icons/git.png";
+import linked from "../images/icons/linked.png";
 
 function Banner() {
   return (

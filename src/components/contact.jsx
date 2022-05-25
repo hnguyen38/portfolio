@@ -12,11 +12,13 @@ function Contact() {
         <span className={styles.color}>―</span>
       </div>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <div className={styles.group1}>
+        <div className={styles.group}>
           <label htmlFor="name">
             Name <span>*</span>
           </label>
           <input id="name" required />
+        </div>
+        <div className={styles.group}>
           <label htmlFor="email">
             Email <span>*</span>
           </label>
