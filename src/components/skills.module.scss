@@ -1,90 +1,61 @@
-.wrapper {
-  border-top: 1px solid rgb(221, 226, 233);
-  padding-bottom: 4rem;
-  width: 100%;
-  // background-color: black;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
 
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 1.5rem;
+    .color {
+      color: rgb(24, 162, 253);
+      font-size: larger;
+      font-weight: bold;
+    }
+  }
+
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+
+    .parts {
+      display: flex;
+      flex-direction: column;
+
+      margin: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1 0 21%;
+
+      img {
+        width: 4rem;
+        margin-bottom: 0.3rem;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
   .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 
     .title {
-      // h1 {
-      //   border-bottom: 1px solid rgb(221, 226, 233);
-      //   color: blue;
-      // }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1.5rem;
 
       .color {
         color: rgb(24, 162, 253);
         font-size: larger;
-      }
-    }
-
-    .section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .skills {
-        display: flex;
-        flex-direction: column;
-        margin-top: 4rem;
-        margin-left: 9rem;
-
-        span {
-          border-bottom: 1px solid rgb(221, 226, 233);
-          margin-bottom: 1rem;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 900px) {
-  .wrapper {
-    .container {
-      margin-top: 4rem;
-      display: flex;
-      flex-direction: column;
-
-      .title {
-        border-bottom: 1px solid rgb(221, 226, 233);
-        .color {
-          display: none;
-        }
-      }
-
-      .section {
-        display: flex;
-        align-items: center;
-
-        .skills {
-          display: flex;
-          margin-left: 3rem;
-          margin-right: 3rem;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 550px) {
-  .wrapper {
-    .container {
-      .section {
-        flex-direction: column;
-        margin-top: 3rem;
-        align-items: flex-start;
-
-        .skills {
-          margin: 0;
-
-          span {
-            border-bottom: 0;
-            margin-bottom: 1rem;
-          }
-        }
       }
     }
   }

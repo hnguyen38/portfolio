@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  align-items: center;
+
+  .container {
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+
+    .span {
+      display: flex;
+      align-items: center;
+      height: 6rem;
+      color: white;
+      font-size: 3rem;
+      transition: transform 0.5s;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.4);
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .wrapper {
+    .container {
+      margin-left: 0.7rem;
+      width: 100vw;
+      .span {
+        height: 3rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}

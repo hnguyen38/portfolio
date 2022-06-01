@@ -1,5 +1,5 @@
 //import styles from "./skills.module.scss";
-import styles from "./skillsV2.module.scss";
+import styles from "./skills.module.scss";
 
 import html from "../images/skills/html5.png";
 import css from "../images/skills/css3.webp";

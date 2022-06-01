@@ -20,11 +20,11 @@
     margin: 2rem;
 
     .img {
-      margin: 2rem;
-      box-shadow: 10px 10px 10px rgb(206, 205, 205);
+      margin: 3rem 2rem;
+      box-shadow: 0px 15px 20px rgb(206, 205, 205);
       height: 20rem;
 
-      img {
+      .cover {
         height: 20rem;
         width: auto;
         transition: transform 0.5s;
@@ -35,26 +35,45 @@
           transform: scale(1.1);
         }
       }
+
+      .journal {
+        width: 404px;
+      }
     }
   }
 
-  // .infosection {
-  //   display: block;
-  //   position: absolute;
-  //   z-index: 5;
-
-  //   overflow-y: scroll;
-  //   height: 100%;
-  //   width: 100%;
-  // }
+  .infoSec {
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    overflow-y: visible;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1010px) {
   .container {
     .projects {
+      margin: 0 0 2rem 0;
       .img {
-        img {
+        margin-top: 5rem;
+        .cover {
           width: 27rem;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    .projects {
+      .img {
+        .cover {
+          width: 26rem;
           height: auto;
         }
       }

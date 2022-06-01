@@ -1,0 +1,37 @@
+.section {
+  margin: 1rem;
+
+  //image itself
+  .gif {
+    width: 55rem;
+    margin: 3rem;
+    border-radius: 7px;
+  }
+
+  .span {
+    margin: 4rem;
+    color: rgb(235, 239, 245);
+  }
+}
+
+@media (max-width: 1020px) {
+  .section {
+    margin-top: 5rem;
+    .gif {
+      width: 40rem;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .section {
+    margin-top: 5rem;
+    .gif {
+      margin: 0.5rem;
+      width: 24rem;
+    }
+    .span {
+      font-size: 0.8rem;
+    }
+  }
+}
