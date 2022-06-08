@@ -2,10 +2,10 @@ import { useState } from "react";
 
 import styles from "./projects.module.scss";
 
-import netflixcover from "../../images/projects/covers/netflix.png";
-import weathercover from "../../images/projects/covers/weather.png";
-import bookcover from "../../images/projects/covers/book.png";
-import journalcover from "../../images/projects/covers/comingsoon.png";
+import netflixcover from "../../images/projects/new/3.png";
+import weathercover from "../../images/projects/new/1.png";
+import bookcover from "../../images/projects/new/2.png";
+import journalcover from "../../images/projects/new/4.png";
 
 import NetflixOverview from "./netflix-info";
 import WeatherOverview from "./weather-info";

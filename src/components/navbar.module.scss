@@ -1,12 +1,14 @@
 .wrapper {
+  width: 99vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 1.5rem;
+  padding: 1rem 0;
   color: rgb(100, 100, 100);
   font-weight: bold;
   position: fixed;
-  //background-color: rgb(235, 239, 245);
+  z-index: 14;
+  transition: 500ms;
 
   .container {
     display: flex;
@@ -40,9 +42,24 @@
     display: flex;
     justify-content: flex-end;
     width: 40vw;
+    margin-right: 6.5rem;
 
     span {
       margin-left: 5rem;
     }
+  }
+}
+
+.color {
+  background-color: rgb(34, 34, 34);
+  // background: linear-gradient(rgb(60, 60, 60), rgb(70, 70, 70));
+  transition: 450ms;
+  .container {
+    .name {
+      color: white;
+    }
+  }
+  .links {
+    color: white;
   }
 }

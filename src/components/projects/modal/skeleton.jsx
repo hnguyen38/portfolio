@@ -1,16 +1,8 @@
 import styles from "./skeleton.module.scss";
-import ScrollButton from "../scroll/scroll";
-import { useRef } from "react";
 
 //props: title, gifs
 
 function InfoSection(props) {
-  const gifRef = useRef(0);
-
-  function scrollHandler(scrollOffSet) {
-    gifRef.current.scrollLeft += scrollOffSet;
-  }
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -24,10 +16,6 @@ function InfoSection(props) {
           </span>
         </div>
         <div className={styles.bottomContainer}>
-          <ScrollButton
-            leftScroll={() => scrollHandler(-200)}
-            rightScroll={() => scrollHandler(200)}
-          />
           <div>{props.gifs}</div>
         </div>
       </div>
