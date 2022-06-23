@@ -1,8 +1,16 @@
 import styles from "./navbar.module.scss";
-import { useState } from "react";
+import { useState, useContext} from "react";
 
-function NavBar() {
+import { NetflixContext } from "../context/netflixContext";
+import {WeatherContext} from "../context/weatherContext";
+import {BookContext} from "../context/bookContext";
+
+function NavBar(props) {
   const [nav, setNav] = useState(false);
+
+  const {netflixPopup} = useContext(NetflixContext);
+  const {weatherPopup} = useContext(WeatherContext);
+  const {bookPopup} = useContext(BookContext);
 
   function changeColor() {
     if (window.scrollY >= 80) {
@@ -15,14 +23,14 @@ function NavBar() {
   window.addEventListener("scroll", changeColor);
 
   return (
-    <div className={`${styles.wrapper} ${nav ? styles.color : null}`}>
+    <div className={`${styles.wrapper} ${nav ? styles.color : null} ${netflixPopup || weatherPopup || bookPopup ? styles.hideNav : null}`}>
       <div className={`${styles.container} ${styles.hide}`}>
         <span className={styles.name}>Portfolio</span>
       </div>
       <div className={styles.links}>
-        <span>About</span>
-        <span>Projects</span>
-        <span>Contact</span>
+        <span><a href={props.about}>About</a></span>
+        <span><a href={props.projects}>Projects</a></span>
+        <span><a href={props.contact}>Contact</a></span>
       </div>
     </div>
   );

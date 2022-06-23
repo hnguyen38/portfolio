@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 import styles from "./projects.module.scss";
 
@@ -7,15 +7,20 @@ import weathercover from "../../images/projects/new/1.png";
 import bookcover from "../../images/projects/new/2.png";
 import journalcover from "../../images/projects/new/4.png";
 
+import { NetflixContext } from "../../context/netflixContext";
+import { WeatherContext } from "../../context/weatherContext";
+import { BookContext } from "../../context/bookContext";
+
 import NetflixOverview from "./netflix-info";
 import WeatherOverview from "./weather-info";
 import BookOverview from "./book-info";
 import Buttons from "./buttons";
 
+
 function Projects() {
-  const [netflixPopup, setNetflixPopup] = useState();
-  const [weatherPopup, setWeatherPopup] = useState();
-  const [bookPopup, setBookPopup] = useState();
+  const {netflixPopup, setNetflixPopup} = useContext(NetflixContext);
+  const {weatherPopup, setWeatherPopup} = useContext(WeatherContext);
+  const {bookPopup, setBookPopup} = useContext(BookContext);
 
   function netflixHandler() {
     return netflixPopup ? setNetflixPopup(false) : setNetflixPopup(true);

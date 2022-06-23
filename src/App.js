@@ -6,16 +6,19 @@ import NavBar from "./components/navbar";
 import Projects from "./components/projects/projects";
 import Skills from "./components/skills";
 
+import styles from './app.module.scss';
+
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Banner />
-      <AboutMe />
+    <div className={styles.container}>
+      <NavBar about='#about ' projects='#project ' contact='#contact ' />
+      <a name='top'><Banner /></a>
+      <a name='about' ><AboutMe /></a>
       <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      <a name='project'><Projects /></a>
+      <a name='contact'><Contact /></a>
+      <a href='#top'><span className={`material-icons ${styles.up}`}>&#xe5d8;</span>
+      </a><Footer />
     </div>
   );
 }
