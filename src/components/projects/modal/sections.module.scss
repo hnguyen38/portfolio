@@ -22,7 +22,6 @@
 
 @media (max-width: 1020px) {
   .section {
-    margin-top: 5rem;
     .gif {
       width: 40rem;
     }
@@ -31,9 +30,9 @@
 
 @media (max-width: 714px) {
   .section {
-    margin-top: 5rem;
+    margin-top: 1rem;
     .gif {
-      width: 25rem;
+     // width: 25rem;
       margin-left: 1rem;
     }
   }

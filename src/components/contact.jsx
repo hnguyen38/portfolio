@@ -3,24 +3,42 @@ import styles from "./contact.module.scss";
 function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
+    window.location = "mailto:hannahnguyen038@gmail.com";
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <div className={styles.header}>
         <h1>Contact Me</h1>
-        <span className={styles.color}>―</span>
+        {/* <span className={styles.color}>―</span> */}
       </div>
-      <div className={styles.allInfo}>
-        <div className={styles.myInfo}>
-          <span className="material-icons">&#xe853;</span>
-          <span>Hannah Nguyen</span>
-          <span className="material-icons">&#xe158;</span>
-          <span>hannahnguyen038@gmail.com</span>
-          <span className="material-icons">&#xe55e;</span>
-          <span>Nebraska, USA</span>
-        </div>
-        <form className={styles.form} onSubmit={handleSubmit}>
+      <div className={styles.container}>
+        <div className={styles.allInfo}>
+          <div className={styles.myInfo}>
+            <div className={styles.info}>
+              <span className={`material-icons ${styles.span}`}>&#xe853;</span>
+              <span className={styles.span}>Hannah Nguyen</span>
+            </div>
+            <div className={styles.info}>
+              <span className={`material-icons ${styles.span}`}>&#xe158;</span>
+              <span className={styles.span}>hannahnguyen038@gmail.com</span>
+            </div>
+            <div className={styles.info}>
+              <span className={`material-icons ${styles.span}`}>&#xe55e;</span>
+              <span className={styles.span}>United States</span>
+            </div>
+            <div className={styles.btnDiv}>
+              <button
+                className={styles.email}
+                type="button"
+                onClick={handleSubmit}
+              >
+                Send me an Email
+              </button>
+            </div>
+          </div>
+
+          {/* <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.group}>
             <label htmlFor="name">
               Name <span>*</span>
@@ -48,7 +66,8 @@ function Contact() {
           <div className={styles.button}>
             <button className={styles.send}>Send</button>
           </div>
-        </form>
+        </form> */}
+        </div>
       </div>
     </div>
   );

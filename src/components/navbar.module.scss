@@ -23,6 +23,10 @@
     .hide {
       color: rgba(0, 0, 0, 0);
       margin-left: -3rem;
+
+      .name{
+        visibility: hidden;
+      }
     }
   }
 
@@ -46,6 +50,17 @@
 
     span {
       margin-left: 5rem;
+      
+
+      &:hover{
+        cursor: pointer;
+      }
+      a{
+        text-decoration: none;
+        color: rgb(100, 100, 100);
+        scroll-behavior: smooth;
+
+      }
     }
   }
 }
@@ -61,5 +76,15 @@
   }
   .links {
     color: white;
+
+    span{
+      a{
+        color: white;
+      }
+    }
   }
+}
+
+.hideNav{
+  margin-top: -5rem;
 }

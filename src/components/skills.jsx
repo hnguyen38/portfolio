@@ -6,7 +6,7 @@ import css from "../images/skills/css3.webp";
 import boot from "../images/skills/bootstrap.svg";
 import sass from "../images/skills/sass.png";
 import js from "../images/skills/js.png";
-import react from "../images/skills/react.png";
+import react from "../images/skills/React.png";
 import firebase from "../images/skills/firebase.png";
 import gith from "../images/skills/github.png";
 
