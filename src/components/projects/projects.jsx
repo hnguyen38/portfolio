@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { useContext } from "react";
+=======
+import { useState, useContext } from "react";
+>>>>>>> 82e602cd37ab763cac57f5d14c25ab4462905a25
 
 import styles from "./projects.module.scss";
 
@@ -11,15 +15,26 @@ import { NetflixContext } from "../../context/netflixContext";
 import { WeatherContext } from "../../context/weatherContext";
 import { BookContext } from "../../context/bookContext";
 
+import { NetflixContext } from "../../context/netflixContext";
+import { WeatherContext } from "../../context/weatherContext";
+import { BookContext } from "../../context/bookContext";
+
 import NetflixOverview from "./netflix-info";
 import WeatherOverview from "./weather-info";
 import BookOverview from "./book-info";
 import Buttons from "./buttons";
 
+
 function Projects() {
+<<<<<<< HEAD
   const { netflixPopup, setNetflixPopup } = useContext(NetflixContext);
   const { weatherPopup, setWeatherPopup } = useContext(WeatherContext);
   const { bookPopup, setBookPopup } = useContext(BookContext);
+=======
+  const {netflixPopup, setNetflixPopup} = useContext(NetflixContext);
+  const {weatherPopup, setWeatherPopup} = useContext(WeatherContext);
+  const {bookPopup, setBookPopup} = useContext(BookContext);
+>>>>>>> 82e602cd37ab763cac57f5d14c25ab4462905a25
 
   function netflixHandler() {
     return netflixPopup ? setNetflixPopup(false) : setNetflixPopup(true);
