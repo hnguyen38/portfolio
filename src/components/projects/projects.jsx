@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { useContext } from "react";
-=======
-import { useState, useContext } from "react";
->>>>>>> 82e602cd37ab763cac57f5d14c25ab4462905a25
 
 import styles from "./projects.module.scss";
 
@@ -15,26 +11,15 @@ import { NetflixContext } from "../../context/netflixContext";
 import { WeatherContext } from "../../context/weatherContext";
 import { BookContext } from "../../context/bookContext";
 
-import { NetflixContext } from "../../context/netflixContext";
-import { WeatherContext } from "../../context/weatherContext";
-import { BookContext } from "../../context/bookContext";
-
 import NetflixOverview from "./netflix-info";
 import WeatherOverview from "./weather-info";
 import BookOverview from "./book-info";
 import Buttons from "./buttons";
 
-
 function Projects() {
-<<<<<<< HEAD
   const { netflixPopup, setNetflixPopup } = useContext(NetflixContext);
   const { weatherPopup, setWeatherPopup } = useContext(WeatherContext);
   const { bookPopup, setBookPopup } = useContext(BookContext);
-=======
-  const {netflixPopup, setNetflixPopup} = useContext(NetflixContext);
-  const {weatherPopup, setWeatherPopup} = useContext(WeatherContext);
-  const {bookPopup, setBookPopup} = useContext(BookContext);
->>>>>>> 82e602cd37ab763cac57f5d14c25ab4462905a25
 
   function netflixHandler() {
     return netflixPopup ? setNetflixPopup(false) : setNetflixPopup(true);
@@ -49,10 +34,12 @@ function Projects() {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <div className={styles.title}>
         <h1>Projects</h1>
+        <span>click image for demo</span>
       </div>
+
       <div className={styles.projects}>
         <div className={styles.img}>
           <img
@@ -106,11 +93,7 @@ function Projects() {
           ) : null}
         </div>
         <div className={styles.img}>
-          <img
-            className={`${styles.cover} ${styles.journal}`}
-            src={newcover}
-            alt="manifest"
-          />
+          <img className={styles.manifest} src={newcover} alt="manifest" />
         </div>
       </div>
     </div>

@@ -21,8 +21,8 @@ function NetflixOverview(props) {
     <div className={styles.wrapper}>
       <div className={styles.btn}>
         <ScrollButton
-          leftScroll={() => scrollHandler(-700)}
-          rightScroll={() => scrollHandler(700)}
+          leftScroll={() => scrollHandler(-500)}
+          rightScroll={() => scrollHandler(500)}
         />
       </div>
 
@@ -36,11 +36,7 @@ function NetflixOverview(props) {
                 alt="summary"
                 caption=" Clone website overview"
               />
-              <Gifs
-                src={trailer}
-                alt="trailer"
-                caption="Demo of banner trailer"
-              />
+              <Gifs src={trailer} alt="trailer" caption="Trailer banner" />
               <Gifs
                 src={rows}
                 alt="rows"

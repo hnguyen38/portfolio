@@ -1,9 +1,7 @@
 import styles from "./introBanner.module.scss";
-import photo from "../images/photo.jpg";
-import git from "../images/icons/git.png";
-import linked from "../images/icons/linked.png";
-
-import me from "../images/me.jpg";
+import git from "../../images/icons/git.png";
+import linked from "../../images/icons/linked.png";
+import me from "../../images/me.jpg";
 
 function Banner() {
   function handleSubmit(e) {

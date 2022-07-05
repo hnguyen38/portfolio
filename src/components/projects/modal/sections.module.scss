@@ -22,30 +22,32 @@
 
 @media (max-width: 1020px) {
   .section {
+    margin-top: 5rem;
     .gif {
       width: 40rem;
+      height: auto;
     }
   }
 }
 
 @media (max-width: 714px) {
   .section {
-    margin-top: 1rem;
     .gif {
-     // width: 25rem;
+      // width: 25rem;
       margin-left: 1rem;
     }
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 580px) {
   .section {
-    margin-top: 5rem;
+    margin: 10rem 0 2rem 2rem;
     .gif {
       margin: 0.5rem;
       width: 24rem;
     }
     .span {
+      margin-top: 1rem;
       font-size: 0.8rem;
     }
   }

@@ -36,9 +36,20 @@
       .title {
         margin-left: 1rem;
         text-align: center;
-
         padding: 1rem;
         border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .wrapper {
+    .container {
+      .head {
+        .title {
+          font-size: 1.5rem;
+        }
       }
     }
   }

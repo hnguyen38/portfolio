@@ -1,7 +1,6 @@
 .wrapper {
-  // background-color: rgb(235, 239, 245);
   background-color: white;
-  height: 30rem;
+  height: 32rem;
   display: flex;
   justify-content: center;
   border-top: 1px solid rgb(221, 226, 233);
@@ -13,19 +12,22 @@
     align-items: flex-start;
     margin-top: 4rem;
 
-    h1 {
+    .title {
       color: black;
       text-align: center;
       color: rgb(61, 61, 61);
       border-bottom: 1px solid black;
-      //border-bottom: 1px solid rgb(221, 226, 233);
       margin-bottom: 3rem;
     }
 
     span {
       color: rgb(100, 100, 100);
       text-align: left;
+      .color {
+        color: rgb(24, 162, 253);
+      }
     }
+
     .blue {
       color: rgb(24, 162, 253);
     }

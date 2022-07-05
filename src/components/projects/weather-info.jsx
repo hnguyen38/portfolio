@@ -31,7 +31,7 @@ function WeatherOverview(props) {
               <Gifs
                 src={first}
                 alt="search location"
-                caption="Opening page. Enter city or zip code."
+                caption="Start page. Enter city or zip code."
               />
               <Gifs
                 src={second}

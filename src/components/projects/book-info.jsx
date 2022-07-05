@@ -23,8 +23,8 @@ function BookOverview(props) {
     <div className={styles.wrapper}>
       <div className={styles.btn}>
         <ScrollButton
-          leftScroll={() => scrollHandler(-700)}
-          rightScroll={() => scrollHandler(700)}
+          leftScroll={() => scrollHandler(-500)}
+          rightScroll={() => scrollHandler(500)}
         />
       </div>
       <div className={styles.container}>
@@ -46,7 +46,7 @@ function BookOverview(props) {
               <Gifs
                 src={del}
                 alt="delete item"
-                caption="Delete any item in list and sign out demo"
+                caption="Delete any item in list and/or sign out"
               />
               <Gifs
                 src={search}
