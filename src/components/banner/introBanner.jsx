@@ -19,7 +19,19 @@ function Banner() {
             the United States.
           </span>
           <div className={styles.icons}>
-            <span className="material-icons" onClick={handleSubmit}>
+            <a
+              href="https://docs.google.com/document/d/1zzOjXJaO1Sicks5kRjzjtQv0D-Td8pNelBIfX2-oXoM/edit"
+              target="_blank"
+            >
+              <span className="material-icons" title="Resume">
+                &#xe873;
+              </span>
+            </a>
+            <span
+              className="material-icons"
+              onClick={handleSubmit}
+              title="Email"
+            >
               &#xe158;
             </span>
             <a
@@ -27,14 +39,14 @@ function Banner() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={git} alt="github icon" />
+              <img src={git} alt="github icon" title="GitHub" />
             </a>
             <a
               href="https://www.linkedin.com/in/hannah-nguyen-696595219/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={linked} alt="linkedin icon" />
+              <img src={linked} alt="linkedin icon" title="LinkedIn" />
             </a>
           </div>
         </div>

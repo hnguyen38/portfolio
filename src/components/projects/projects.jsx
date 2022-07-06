@@ -49,7 +49,7 @@ function Projects() {
             onClick={netflixHandler}
           />
           <Buttons
-            live="https://thriving-croissant-f1a4f7.netlify.app/"
+            live="https://netflix-clone-038.netlify.app/"
             code="https://github.com/hnguyen38/netflix-clone.git"
           />
           {netflixPopup ? (
@@ -66,7 +66,7 @@ function Projects() {
             onClick={weatherHandler}
           />
           <Buttons
-            live="https://tourmaline-crostata-0f0f94.netlify.app/"
+            live="https://weather-app-038.netlify.app/"
             code="https://github.com/hnguyen38/weather-app.git"
           />
           {weatherPopup ? (
@@ -83,7 +83,7 @@ function Projects() {
             onClick={bookHandler}
           />
           <Buttons
-            live="https://astonishing-youtiao-2dbfe9.netlify.app/"
+            live="https://book-app-038.netlify.app/"
             code="https://github.com/hnguyen38/book-keeping-app.git"
           />
           {bookPopup ? (
