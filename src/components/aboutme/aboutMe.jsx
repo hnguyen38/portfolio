@@ -8,9 +8,9 @@ function AboutMe() {
         <span>
           I am a self-taught <b>front end developer</b> with a{" "}
           <span className={styles.color}>React</span> focus but open to working
-          with different technologies. I aspire to take on work that improve
-          users’ everyday lives and passionate in expanding my knowledge in this
-          field.
+          with different technologies. I aspire to take on work that improves
+          users’ everyday lives and am passionate in expanding my knowledge in
+          this field.
         </span>
 
         <span className={styles.education}>Education</span>

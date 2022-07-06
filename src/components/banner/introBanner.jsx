@@ -19,14 +19,6 @@ function Banner() {
             the United States.
           </span>
           <div className={styles.icons}>
-            <a
-              href="https://docs.google.com/document/d/1zzOjXJaO1Sicks5kRjzjtQv0D-Td8pNelBIfX2-oXoM/edit"
-              target="_blank"
-            >
-              <span className="material-icons" title="Resume">
-                &#xe873;
-              </span>
-            </a>
             <span
               className="material-icons"
               onClick={handleSubmit}
