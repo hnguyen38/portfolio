@@ -60,7 +60,7 @@
   }
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1450px) {
   .wrapper {
     .hide {
       width: 50vw;
@@ -71,7 +71,19 @@
   }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1270px) {
+  .wrapper {
+    .image {
+      .selfie {
+        position: absolute;
+        width: 640px;
+        overflow-x: hidden;
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
   .wrapper {
     .intro {
       width: 100vw;
